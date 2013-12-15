@@ -100,7 +100,7 @@ echo -e $mail | /usr/sbin/sendmail "$recipients"
 Burada ilk önce Subject, Alıcı, Gönderici ve Mesaj kısmnı tanımlayıp, sonra sendmail i kullanarak kullanıcıya mail gönderiyorum. Sendmail ile ilgili detaylı bilgiye buradan ulaşabilirsiniz.
 http://www.sendmail.com/sm/open_source/
 
-Önemli Not: Scriptin email gönderebilmesi için, scriptin çalıştırıldığı makinede sendmail kurulu olması lazım. 
+>Önemli Not: Scriptin email gönderebilmesi için, scriptin çalıştırıldığı makinede sendmail kurulu olması lazım. 
 
 Bu scripti best practise olması açısından crontab e koydup dakikada bir çalışmasını sağladım. Bu sayede bu script her dakika döviz servisini çağırıp, belirtilen kur değerini alıp kullancıya mail atmasını sağlıyorum. Crontab için gerekli satır ise şu şekilde;
 ```bash
