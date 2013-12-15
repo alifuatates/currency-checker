@@ -23,8 +23,8 @@ else
 
 	if [[ "$(echo ${BASH_REMATCH[1]}'>' $LIMIT | bc -l)" -eq 1 ]]; then
 		subject="$FROM_CURRENCY is greater than $LIMIT : ${BASH_REMATCH[1]}"		
-		recipients="alifuatates36@gmail.com"
-		from="root@sunucu.net"
+		recipients="gonderilecek_mail_adresi@gmail.com"
+		from="info@sunucu.net"
 		mail="subject:$subject\nfrom:$from\n$subject"
 		echo -e $mail | /usr/sbin/sendmail "$recipients"
 	fi
