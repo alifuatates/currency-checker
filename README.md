@@ -27,7 +27,9 @@ Detaylı bilgi için http://how-to.wikia.com/wiki/How_to_read_command_line_argum
 ## KONTROL YAPILARI
 
 Yazdığım scriptte şu kontroller sağlanıyor;
+
 a. Kullanıcının 3 gerekli olan 3 tane parametreyi girip girmediğini kontrol etme
+
 b. Çevrilmek istenen kurun belirli bir limitin üstünde olması halinde kullanıcıya mail gönderiliyor. Bu limiti kontrol etme
 
 Scriptteki kula-lanım şekli
@@ -41,7 +43,9 @@ fi
 Burada if içinde yine bash scripte özel "-ne" ifadesini kullandım. Yani "Not Equal". Buna benzer başka ifadeler ise;
 
 gt => "Greater Than"
+
 lt => "Less Than"
+
 gibi...
 
 Burada kullanıcının kaç tane parametre girdiğini tespit etmek için bash scripte özel keyword olan "$#" ı kullandım. Bash scriptte kontrol yapılarındaki ifadelerin bitiş yerini belirtmek 
