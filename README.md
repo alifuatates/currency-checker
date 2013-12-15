@@ -1,7 +1,7 @@
 currency-checker
 ================
 
-#SCRIPT E PARAMETRE GEÇME
+## SCRIPT E PARAMETRE GEÇME
 
 currency_convert.sh bash scripti çalıştırılırken kullanıcıdan 3 tane parametre irmesin bekliyor. Bu yüzden fonksiyonun kullanıcı parametrelerini alması için bir yöntem kullandım.
 Bash scriptine geçilen parametreleri okuyabilmek için bash scripte özel keyword kullandım. Çalışma şekli şu şekilde;
@@ -20,7 +20,7 @@ AMOUNT="$3"
 ```
 Detaylı bilgi için http://how-to.wikia.com/wiki/How_to_read_command_line_arguments_in_a_bash_script
 
-#KONTROL YAPILARI
+## KONTROL YAPILARI
 
 Yazdığım scriptte şu kontroller sağlanıyor;
 a. Kullanıcının 3 gerekli olan 3 tane parametreyi girip girmediğini kontrol etme
@@ -53,7 +53,7 @@ esac   gibi...
 
 Daha fazla bilgi için şuraya göz atabilirsiniz http://cecs.wright.edu/~pmateti/Courses/333/Notes/bash-control_s.html
 
-# SED
+## SED
 
 SED = Stream EDitor. 1970 li yıllarda yazılan bu fonksiyon, bir çok yerde hayat kurtarır. Genel olarak dosyadan ya da başka bir kaynaktan gelen veri üzerinde metin dönüştürmesini sağlar.
 
@@ -63,7 +63,7 @@ echo Alifuat SU | sed 's/SU/ATEŞ/'
 ```
 Yukarıdaki ifadede, Alifuat SU metni Alifuat ATEŞ ifadesine dönüştürülür. Bunusağlayan ise, 's/SU/ATEŞ/' kısmıdır. Detaylı bilgi için bu adrese bakabilir http://www.grymoire.com/Unix/Sed.html ya da linux komut satırında "man sendmail" yazıp nasıl kullanıldığı hakkında bilgi alabilirsiniz.
 
-# REGULAR EXPRESSIONS
+## REGULAR EXPRESSIONS
 
 Düzenli ifadeler birçok programlama dillerinde olduğu gibi bash script programlamada da kullanılmaktadır. Kısaca, veri filtrelemede, validasyonda, ya da metin dönüştürmelerinde kullanılır.
 Mesela Kullanıcı kayıt sistemini düşünün. Burada kullanıcıdan beklenen değerlerin içinde email yer almaktadır. Kullanıcının girdiği email adresinin geçerli bir adres olup olmadığını tespit
@@ -79,7 +79,7 @@ Yani v": yi görünce, bu anahtardan sonraki değeri almasını sağlıyorum.
 
 Bu konuda daha fazla bilgi almak ve örnek düzenli ifadelere ulaşmak için buraya bakabilirsiniz. http://gskinner.com/RegExr/
 
-# EMAILING
+## EMAILING
 
 Bu scriptin temel amaclarından biri de döviz bilgisinin belirli bir değere ulaşması halinde kullanıcıya email göndermesidir. Servisten dönden değeri filtreleyip istenilen değeri bulduktan sonra kontrol yapılarını kullanarak değerin belirli bir limitten yüksek olup olmmamasıı kontrol ediyorum. Eğer limiti aşmışsa, belirtilen kullanıcıya email gönderiyorum. Örnek kullanım;
 ```bash
