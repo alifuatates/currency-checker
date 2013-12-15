@@ -7,9 +7,13 @@ currency_convert.sh bash scripti çalıştırılırken kullanıcıdan 3 tane par
 Bash scriptine geçilen parametreleri okuyabilmek için bash scripte özel keyword kullandım. Çalışma şekli şu şekilde;
 
 $0 => bash scriptin adını verir (currency_convert.sh)
+
 $1 => scripte geçilen 1. parametreyi verir (Mesela USD)
+
 $2 => scripte geçilen 2. parametreyi verir (Mesela TRY)
+
 $3 => scripte geçilen 3. parametreyi verir (Mesela 2)
+
 $4, $5, ....., $n bu şekilde girilen parametrelerin sırasına göre scriptin içinden bu prametreler okunup kullanılabilir 
 
 Scriptteki kullanım şekli;
