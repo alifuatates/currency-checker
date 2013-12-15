@@ -22,7 +22,7 @@ FROM_CURRENCY="$1"
 TO_CURRENCY="$2"
 AMOUNT="$3"
 ```
-Detaylı bilgi için http://how-to.wikia.com/wiki/How_to_read_command_line_arguments_in_a_bash_script
+Detaylı bilgi için [buraya](http://how-to.wikia.com/wiki/How_to_read_command_line_arguments_in_a_bash_script) bakabilirsiniz
 
 ## KONTROL YAPILARI
 
@@ -59,7 +59,7 @@ case
 ....
 esac   gibi...
 
-Daha fazla bilgi için şuraya göz atabilirsiniz http://cecs.wright.edu/~pmateti/Courses/333/Notes/bash-control_s.html
+Daha fazla bilgi için [şuraya](http://cecs.wright.edu/~pmateti/Courses/333/Notes/bash-control_s.html) göz atabilirsiniz
 
 ## SED
 
@@ -69,7 +69,7 @@ SED = Stream EDitor. 1970 li yıllarda yazılan bu fonksiyon, bir çok yerde hay
 ```bash
 echo Alifuat SU | sed 's/SU/ATEŞ/'
 ```
-Yukarıdaki ifadede, Alifuat SU metni Alifuat ATEŞ ifadesine dönüştürülür. Bunusağlayan ise, 's/SU/ATEŞ/' kısmıdır. Detaylı bilgi için bu adrese bakabilir http://www.grymoire.com/Unix/Sed.html ya da linux komut satırında "man sendmail" yazıp nasıl kullanıldığı hakkında bilgi alabilirsiniz.
+Yukarıdaki ifadede, Alifuat SU metni Alifuat ATEŞ ifadesine dönüştürülür. Bunusağlayan ise, 's/SU/ATEŞ/' kısmıdır. Detaylı bilgi için [bu adrese](http://www.grymoire.com/Unix/Sed.html) bakabilir ya da linux komut satırında "man sendmail" yazıp nasıl kullanıldığı hakkında bilgi alabilirsiniz.
 
 ## REGULAR EXPRESSIONS
 
@@ -85,7 +85,7 @@ v\":(.*)
 ```
 Yani v": yi görünce, bu anahtardan sonraki değeri almasını sağlıyorum.
 
-Bu konuda daha fazla bilgi almak ve örnek düzenli ifadelere ulaşmak için buraya bakabilirsiniz. http://gskinner.com/RegExr/
+Bu konuda daha fazla bilgi almak ve örnek düzenli ifadelere ulaşmak için [buraya](http://gskinner.com/RegExr/) bakabilirsiniz. 
 
 ## EMAILING
 
@@ -97,8 +97,7 @@ from="info@currencyservice.com"
 mail="subject:$subject\nfrom:$from\n$subject"
 echo -e $mail | /usr/sbin/sendmail "$recipients"
 ```
-Burada ilk önce Subject, Alıcı, Gönderici ve Mesaj kısmnı tanımlayıp, sonra sendmail i kullanarak kullanıcıya mail gönderiyorum. Sendmail ile ilgili detaylı bilgiye buradan ulaşabilirsiniz.
-http://www.sendmail.com/sm/open_source/
+Burada ilk önce Subject, Alıcı, Gönderici ve Mesaj kısmnı tanımlayıp, sonra sendmail i kullanarak kullanıcıya mail gönderiyorum. Sendmail ile ilgili detaylı bilgiye [buradan](http://www.sendmail.com/sm/open_source/) ulaşabilirsiniz.
 
 >Önemli Not: Scriptin email gönderebilmesi için, scriptin çalıştırıldığı makinede sendmail kurulu olması lazım. 
 
@@ -106,7 +105,7 @@ Bu scripti best practise olması açısından crontab e koydup dakikada bir çal
 ```bash
 * * * * * scriptin_bulunduğu_dizin/currency_convert.sh USD TRY 1
 ```
-Crontab hakkında detaylı bilgi için ise şuraya göz atabilirsiniz. http://kvz.io/blog/2007/07/29/schedule-tasks-on-linux-using-crontab/
+Crontab hakkında detaylı bilgi için ise [şuraya](http://kvz.io/blog/2007/07/29/schedule-tasks-on-linux-using-crontab/s) göz atabilirsiniz. 
 
 
 
